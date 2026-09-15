@@ -1,0 +1,1952 @@
+/* Bouton slider style ASSE */
+.btn-slider {
+    font-family: 'Montserrat', sans-serif; /* même typo que ton site */
+    font-size: 16px; /* ajuste si ton site est en 14 ou 18 */
+    color: #ffffff;
+    text-decoration: none; /* enlève le soulignement */
+
+    background: transparent;
+    border: 2px solid #ffffff;
+    padding: 10px 20px;
+    border-radius: 6px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover propre (optionnel mais stylé) */
+.btn-slider:hover {
+    background: #ffffff;
+    color: #027D43; /* vert ASSE */
+    text-decoration: none;
+}
+
+/* Quand on clique */
+.btn-slider:active {
+    transform: scale(0.96);
+}
+
+
+#maillot-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+	background-image: url("images/fond2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@font-face {
+  font-family: 'Ligue2';
+  src: url('Ligue2-Shadow.woff2') format('woff2');
+}
+
+#flocage-nom,
+#flocage-numero {
+    font-family: "Ligue2", sans-serif;
+}
+.maillot {
+    position: relative;
+    width: 450px;
+}
+
+.produit {
+	background-image: url("images/fond2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.maillot-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+	background-image: url("images/fond2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#mainImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* IMPORTANT */
+}
+
+.personnalisation {
+    display: flex;
+    flex-direction: column; /* 🔥 FORCE VERTICAL */
+    gap: 10px;
+}
+
+.options-personnalisation {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#liste-joueurs select,
+#zone-input input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.btn-personnaliser {
+    background: #111;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn-personnaliser:hover {
+    background: #333;
+}
+
+.options-personnalisation {
+    display: none;
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.options-personnalisation button {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background: white;
+}
+
+.options-personnalisation button:hover {
+    background: #f2f2f2;
+}
+
+.btn-acheter {
+    background: #027d43;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+/* hover simple */
+.btn-acheter:hover {
+    background: #015f32;
+    transform: none; /* 🔥 enlève le zoom */
+}
+
+/* Click effet */
+.btn-acheter:active {
+    transform: scale(0.97);
+}
+
+.btn-acheter:hover::after {
+    animation: shine 0.6s ease;
+}
+
+@keyframes shine {
+    100% {
+        left: 200%;
+    }
+}
+
+#panier-count {
+    background: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.tailles button {
+	font-family: 'Montserrat', sans-serif;
+    margin: 5px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 6px;
+}
+
+/* 👉 taille sélectionnée */
+.tailles button.active {
+    background: #027D43; /* vert ASSE */
+    color: white;
+    border-color: #027D43;
+    transform: scale(1.05);
+}
+
+/* ===== FOND BOUTIQUE ===== */
+body.produit-page {
+    background-image: none !important;
+    background-color: #f5f5f5 !important;
+}
+
+.maillot-container {
+    position: relative;
+    width: 600px;
+}
+
+.flocage {
+    position: absolute;
+    top: 42%; /* ajuste selon ton maillot */
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Ligue2", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+
+#flocage {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#flocage-nom {
+    display: block;
+    font-size: 70px;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.6);
+	font-family: "Ligue2", sans-serif;
+}
+
+#flocage-numero {
+    display: block;
+    font-size: 170px;
+    color: white;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.6);
+	font-family: "Ligue2", sans-serif;
+}
+
+.btn-produit {
+    display: inline-block;
+    background: #027D43; /* ta couleur verte */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none; /* enlève le soulignement */
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-produit:hover {
+    background: #015f32; /* vert plus foncé au hover */
+}
+
+.fiche-produit {
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+}
+
+/* GAUCHE */
+.galerie {
+    flex: 1;
+}
+
+.image-principale {
+    width: 100%;
+    display: block;
+}
+
+.miniatures {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.miniatures img {
+    width: 70px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* DROITE */
+.infos-produit {
+    flex: 1;
+}
+
+.prix {
+    font-size: 28px;
+    font-weight: bold;
+    color: #027D43;
+}
+
+.tailles button {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.personnalisation input {
+    display: flex;
+    margin: 10px 0;
+    padding: 10px;
+    width: 200px;
+}
+
+.acheter {
+    background: #027D43;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.shop-arrow {
+    display: none; /* caché par défaut (desktop) */
+}
+
+.produits-wrapper {
+    position: relative;
+}
+
+.shop-nav,
+.menu-boutique {
+    position: relative;
+    z-index: 2000;
+}
+
+
+.menu-boutique {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+body.panier-page {
+    background-image: none !important;
+    background-color: #f5f5f5 !important;
+}
+/* ===== FOND BOUTIQUE ===== */
+body.boutique-page {
+    background-image: none !important;
+    background-color: #f5f5f5 !important;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ===== MENU BOUTIQUE ===== */
+.shop-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background: #027D43;
+    padding: 15px;
+}
+
+.shop-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* ===== SLIDER ===== */
+.slider {
+    height: 100vh;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: 1s;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* ===== TEXTE SLIDER ===== */
+.overlay {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    color: white;
+}
+
+.overlay h2 {
+    font-size: 40px;
+}
+
+.overlay button {
+    padding: 12px 25px;
+    background: #027D43;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* ===== FLÈCHE ===== */
+.arrow {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-size: 30px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* ===== PRODUITS (VERSION PROPRE) ===== */
+.produits {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 par ligne */
+    gap: 30px;
+    padding: 40px;
+}
+
+.produit {
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border: 1px solid #eee;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.produit:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.produit img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.produit h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.produit p {
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.produit button {
+    background-color: #006400;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: auto;
+    transition: background 0.2s;
+}
+
+.produit button:hover {
+    background-color: #028a0f;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #0a0a0a;
+    color: white;
+    width: 100%;
+    padding: 40px 0px;
+    font-size: 13px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: flex-start;
+}
+
+.footer-col h3 {
+    font-size: 15px;
+    margin-bottom: 12px;
+    color: #00a550;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 6px;
+}
+
+.footer-col ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #00a550;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 11px;
+    color: #888;
+}
+
+/* ===== LOGO ===== */
+.logo {
+    transition: opacity 0.3s ease;
+}
+
+#logo-anim {
+    height: 60px;
+    transition: opacity 0.3s ease;
+}
+/* =========================
+   MATCHS
+   ========================= */
+
+.matchs {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.matchs h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   ENCADRÉ DU MATCH
+   ========================= */
+
+.ligne-match {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+	position: relative;
+
+    padding: 25px;
+    margin-bottom: 25px;
+
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.ligne-match .card-text h3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+/* Texte du match */
+
+.card-text {
+    flex: 1;
+}
+
+.card-text h3 {
+    margin-bottom: 15px;
+}
+
+.card-text p {
+    margin: 8px 0;
+}
+
+
+/* =========================
+   PHOTO PRINCIPALE
+   ========================= */
+
+.galerie-match {
+    flex-shrink: 0;
+}
+
+.photo-match {
+    width: 250px;
+    height: 170px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: transform 0.3s ease,
+                opacity 0.3s ease;
+}
+
+.photo-match:hover {
+    transform: scale(1.05);
+    opacity: 0.85;
+}
+
+
+/* =========================
+   PHOTOS CACHÉES
+   ========================= */
+
+.photos-cachees {
+    display: none;
+}
+
+/* =========================
+   POPUP GALERIE
+   ========================= */
+
+.galerie-popup {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.galerie-popup.active {
+    display: flex;
+}
+
+#image-galerie {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.fermer-galerie {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.fleche {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 45px;
+    cursor: pointer;
+    padding: 20px;
+}
+
+#precedent {
+    left: 20px;
+}
+
+#suivant {
+    right: 20px;
+}
+
+#compteur {
+    position: absolute;
+    bottom: 25px;
+    color: white;
+    font-size: 18px;
+}
+
+
+
+
+/* =========================================
+   COULEURS DU CLASSEMENT
+   ========================================= */
+
+.classement tr.vert-fonce td {
+    border-top: 4px solid #006400 !important;
+    border-bottom: 4px solid #006400 !important;
+}
+
+.classement tr.vert-fonce td:first-child {
+    border-left: 4px solid #006400 !important;
+}
+
+.classement tr.vert-fonce td:last-child {
+    border-right: 4px solid #006400 !important;
+}
+
+
+.classement tr.vert-clair td {
+    border-top: 4px solid #7CFC00 !important;
+    border-bottom: 4px solid #7CFC00 !important;
+}
+
+.classement tr.vert-clair td:first-child {
+    border-left: 4px solid #7CFC00 !important;
+}
+
+.classement tr.vert-clair td:last-child {
+    border-right: 4px solid #7CFC00 !important;
+}
+
+
+.classement tr.orange td {
+    border-top: 4px solid #FFA500 !important;
+    border-bottom: 4px solid #FFA500 !important;
+}
+
+.classement tr.orange td:first-child {
+    border-left: 4px solid #FFA500 !important;
+}
+
+.classement tr.orange td:last-child {
+    border-right: 4px solid #FFA500 !important;
+}
+
+
+.classement tr.rouge td {
+    border-top: 4px solid #FF0000 !important;
+    border-bottom: 4px solid #FF0000 !important;
+}
+
+.classement tr.rouge td:first-child {
+    border-left: 4px solid #FF0000 !important;
+}
+
+.classement tr.rouge td:last-child {
+    border-right: 4px solid #FF0000 !important;
+}
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px;   
+    font-size: 18px;
+}
+
+th, td {
+    text-align: center;
+    padding: 12px 10px;
+}
+
+table, th, td {
+    border: none;
+}
+
+tr {
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+thead tr {
+    background-color: #2b7a0b; 
+    color: white;
+    font-weight: normal; 
+    box-shadow: none;
+    border-radius: 10px 10px 0 0;
+}
+
+th {
+    padding: 15px 10px;
+    font-weight: normal; 
+}
+
+
+td img {
+    vertical-align: middle;
+    border-radius: 0;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+
+td {
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+
+td .match {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+tr:hover td {
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+/* compétition */
+.amical {
+    border-left: 6px solid red !important;
+}
+
+.championnat {
+    border-left: 6px solid blue !important;
+}
+
+/* domicile / extérieur */
+.domicile {
+    border-right: 6px solid green !important;
+}
+
+.exterieur {
+    border-right: 6px solid orange !important;
+}
+
+/* =========================================================
+   MENU
+   ========================================================= */
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #027D43;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    z-index: 3000;
+}
+
+.hamburger {
+    display: none;
+}
+
+.menu li {
+    position: relative;
+    margin: 0 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   SOULIGNEMENT MENU PRINCIPAL
+   ========================================================= */
+
+.menu > li:not(.logo-li) > a {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+}
+
+.menu > li:not(.logo-li) > a::before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.menu > li:not(.logo-li) > a:hover::before {
+    width: 100%;
+}
+
+
+/* =========================================================
+   SOUS-MENU
+   ========================================================= */
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    background: #027D43;
+
+    min-width: 200px;
+
+    padding: 8px 0;
+
+    border-radius: 10px;
+
+    border: 1px solid rgba(255,255,255,0.25); /* 👈 cadre visible */
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+
+    display: none;
+
+    z-index: 4000;
+}
+
+.submenu li {
+	list-style: none;
+    padding: 8px 15px;
+    margin: 0;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    transition: 0.2s;
+    color: white;
+    position: relative;
+    width: auto;
+    white-space: nowrap;
+}
+
+
+/* Soulignement du sous-menu */
+
+.submenu li a::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.submenu li a:hover {
+    background: rgba(255,255,255,0.15);
+    padding-left: 20px;
+}
+
+.submenu li a:hover::before {
+    width: 100%;
+}
+
+
+/* =========================================================
+   FLÈCHES
+   ========================================================= */
+
+.dropdown > a::after {
+    content: "▼";
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown.active > a::after {
+    transform: rotate(180deg);
+}
+
+.dropdown.active .submenu {
+    display: block;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.logo {
+    height: 50px;
+}
+
+
+/* =========================================================
+   POLICES
+   ========================================================= */
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/* =========================================================
+   BODY
+   ========================================================= */
+
+body {
+    padding-top: 80px;
+    font-family: 'Montserrat', sans-serif;
+
+    background-image: url("images/fond.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+ul.dates {
+    list-style: none;
+    display: flex;
+	justify-content: center;
+    flex-wrap: wrap;        
+    gap: 15px;
+	margin: 10px auto 30px auto;
+    margin-top: 10px;
+    padding: 0;
+    max-width: 250px;    
+	font-size: 20px;
+	color: #006400;
+}
+
+ul.dates li {
+    background-color: white;
+    color: #027D43;
+    padding: 8px 12px;     
+    margin: 5px 0;           
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;         
+    min-width: 50px;         
+}
+
+.dates a {
+    color: inherit;           /* garde la couleur actuelle */
+    text-decoration: none;    /* enlève le souligné */
+    font-family: inherit;     /* garde ta police */
+    font-size: inherit;       /* garde la taille */
+    font-weight: inherit;     /* garde le style */
+}
+
+.dates a:visited {
+    color: inherit;           /* évite le violet après clic */
+}
+
+.dates a:hover {
+    color: #C6A96B;           /* option : effet au survol */
+}
+
+/* =========================================================
+   CARTES
+   ========================================================= */
+
+.ligne-trophee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 30px auto;
+    padding: 20px;
+
+    background-color: #f5f5dc;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.2);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Carte normale :
+   IMAGE | TEXTE
+*/
+
+
+/* Carte reverse :
+   TEXTE | IMAGE
+*/
+
+.ligne-trophee.reverse {
+    flex-direction: row-reverse;
+}
+
+
+/* Animation de la carte */
+
+.ligne-trophee:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Animation image */
+
+.ligne-trophee:hover .icone-trophee {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+
+/* =========================================================
+   IMAGES DES CARTES
+   ========================================================= */
+
+.ligne-trophee img {
+    max-width: 45%;
+    height: auto;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   ICÔNES / IMAGES
+   ========================================================= */
+
+.icone-trophee {
+    width: 300px;
+    height: auto;
+
+    margin-left: 20px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.icone-trophee:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+
+/* =========================================================
+   TEXTE DES CARTES
+   ========================================================= */
+
+.card-text {
+    width: 50%;
+    padding: 0 20px;
+
+    box-sizing: border-box;
+
+    flex: 1;
+}
+
+
+/* =========================================================
+   CANVAS CONFETTIS / STADE
+   ========================================================= */
+
+#confetti-canvas {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    z-index: 99999;
+}
+
+
+/* =========================================================
+   BOUTON STOP
+   ========================================================= */
+
+#stop-music {
+    padding: 10px 20px;
+
+    font-size: 16px;
+
+    background-color: #006600;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    margin: 20px;
+
+    display: none;
+}
+
+#stop-music:hover {
+    background-color: #009900;
+}
+
+
+/* =========================================================
+   VERSION MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+	
+	.slider {
+		height: 55vh;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.slide {
+		position: absolute;
+		inset: 0;
+		background-size: cover;
+		background-position: center;
+	}
+
+	/* couche sombre */
+	.slide::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background: rgba(0,0,0,0.45);
+		z-index: 1;
+	}
+
+	/* TEXTE SLIDER */
+	.overlay {
+		position: absolute;
+		bottom: 15px;
+		left: 15px;
+		right: 15px;
+
+		z-index: 5; /* 🔥 toujours au-dessus */
+		color: white;
+	}
+	
+	.shop-nav {
+		overflow-x: auto;
+		white-space: nowrap;
+		display: flex;
+		justify-content: flex-start;
+		padding: 10px;
+	}
+
+	/* cache scrollbar */
+	.shop-nav::-webkit-scrollbar {
+		display: none;
+	}
+
+	.shop-nav {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+
+	.menu-boutique {
+		display: flex;
+		gap: 10px;
+		flex-wrap: wrap;
+		font-size: 13px;
+	}
+
+	.menu-boutique li {
+		flex: 0 0 auto;
+	}
+		
+	.slide:nth-child(1) {
+		background-image: url("images/domicile-mobile.jpg") !important;
+	}
+
+	.slide:nth-child(2) {
+		background-image: url("images/exterieur-mobile.jpg") !important;
+	}
+	
+	.produits {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .produit {
+        flex: 0 0 45%;
+        scroll-snap-align: start;
+    }
+
+    .produits::-webkit-scrollbar {
+        display: none;
+    }
+
+    .produits {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .produits-wrapper {
+		position: relative;
+	}
+
+	.shop-arrow {
+		display: block;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		background: rgba(0,0,0,0.6);
+		color: white;
+		padding: 10px 15px;
+		border-radius: 50%;
+		cursor: pointer;
+		z-index: 5000;
+	}
+
+	.shop-arrow.left {
+		left: 10px;
+	}
+
+	.shop-arrow.right {
+		right: 10px;
+	}
+		
+	#image-galerie {
+        max-width: 90%;
+        max-height: 75%;
+    }
+
+    .fleche {
+        font-size: 30px;
+    }
+
+    #precedent {
+        left: 0;
+    }
+
+    #suivant {
+        right: 0;
+    }
+	
+	.ligne-match {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+	}
+
+
+	/* TEXTE DU MATCH */
+
+	.card-text {
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+
+
+	/* SCORE */
+
+	.card-text h3 {
+		position: static !important;
+		transform: none !important;
+
+		margin: 15px 0 20px 0;
+
+		text-align: center;
+
+		white-space: normal;
+	}
+
+
+	/* DATE + COMPÉTITION */
+
+	.card-text p {
+		text-align: center;
+		margin: 8px 0;
+	}
+
+
+	/* PHOTO */
+
+	.galerie-match {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.photo-match {
+		width: 100%;
+		max-width: 350px;
+		height: 220px;
+		object-fit: cover;
+	}
+		
+	.classement {
+        width: 100%;
+        font-size: 13px;
+        border-spacing: 0 8px;
+    }
+
+    /* Cacher les titres */
+    .classement thead {
+        display: none;
+    }
+
+    /* Chaque équipe = une carte */
+    .classement tbody tr {
+        display: grid;
+        grid-template-columns: 35px 45px 1fr 45px;
+        align-items: center;
+
+        width: 100%;
+        min-height: 55px;
+
+        margin-bottom: 8px;
+
+        box-sizing: border-box;
+
+        background-color: #f5f5f5;
+
+        border-radius: 10px;
+
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    /* =================================================
+       CELLULES
+       ================================================= */
+
+    .classement tbody td {
+        display: block;
+
+        padding: 7px 3px;
+
+        border: none !important;
+
+        text-align: center;
+
+        box-sizing: border-box;
+    }
+
+    /* Position */
+
+    .classement tbody td:nth-child(1) {
+
+        font-size: 15px;
+        font-weight: bold;
+
+    }
+
+
+    /* Logo */
+
+    .classement tbody td:nth-child(2) {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .classement tbody td:nth-child(2) img {
+
+        width: 30px;
+        height: 30px;
+
+        object-fit: contain;
+
+    }
+
+
+    /* Nom */
+
+    .classement tbody td:nth-child(3) {
+
+        text-align: left;
+
+        font-size: 14px;
+
+        font-weight: 600;
+
+        padding-left: 5px;
+
+    }
+
+
+    /* Points */
+
+    .classement tbody td:nth-child(4) {
+
+        font-size: 15px;
+
+        font-weight: bold;
+
+    }
+
+
+    /* Cacher J V N D BP BC Diff */
+
+    .classement tbody td:nth-child(n+5) {
+
+        display: none;
+
+    }
+
+
+    /* =================================================
+       🟢 1er / 2e
+       ================================================= */
+
+    .classement tbody tr.vert-fonce {
+
+        border: 3px solid #006400 !important;
+
+    }
+
+
+    /* =================================================
+       🟢 3e / 4e / 5e
+       ================================================= */
+
+    .classement tbody tr.vert-clair {
+
+        border: 3px solid #7CFC00 !important;
+
+    }
+
+
+    /* =================================================
+       🟠 16e
+       ================================================= */
+
+    .classement tbody tr.orange {
+
+        border: 3px solid #FFA500 !important;
+
+    }
+
+
+    /* =================================================
+       🔴 17e / 18e
+       ================================================= */
+
+    .classement tbody tr.rouge {
+
+        border: 3px solid #FF0000 !important;
+
+    }
+
+    /* =====================================================
+       TABLEAU MOBILE
+       ===================================================== */
+
+    table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0 8px;
+        table-layout: fixed;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody,
+    tr {
+        display: block;
+        width: 100%;
+    }
+
+    tr {
+        margin: 0 0 10px 0;
+        padding: 0;
+    }
+
+    td {
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 40px;
+
+        display: flex;
+        align-items: center;
+
+        text-align: left;
+
+        padding: 8px 10px;
+
+        font-size: 14px;
+
+        margin: 0 0 4px 0;
+
+        border-radius: 8px;
+
+        background-color: #f5f5f5;
+
+        gap: 6px;
+
+        overflow: hidden;
+    }
+
+    td img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
+    td span.label {
+        font-weight: bold;
+        font-size: 12px;
+        flex: 0 0 auto;
+    }
+
+    td span.value {
+        flex: 1;
+        min-width: 0;
+    }
+
+
+    /* =====================================================
+       SCORE
+       ===================================================== */
+
+    td .score {
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: auto;
+        margin-right: 5px;
+    }
+
+
+    /* =====================================================
+       BARRE DU MENU
+       ===================================================== */
+
+    .menu {
+        height: 70px;
+        width: 100%;
+        padding: 0;
+        display: block;
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       HAMBURGER
+       ===================================================== */
+
+    .hamburger {
+        display: flex;
+
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 5px;
+
+        position: fixed;
+
+        top: 15px;
+        left: 15px;
+
+        width: 40px;
+        height: 40px;
+
+        padding: 5px;
+
+        background: transparent;
+
+        border: none;
+
+        cursor: pointer;
+
+        z-index: 4000;
+    }
+
+    .hamburger span {
+        display: block;
+
+        width: 28px;
+        height: 3px;
+
+        background-color: white;
+
+        border-radius: 2px;
+    }
+
+
+    /* =====================================================
+       LOGO
+       ===================================================== */
+
+    .menu .logo-li {
+        display: block;
+
+        position: fixed;
+
+        top: 10px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        margin: 0;
+
+        z-index: 3500;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+
+    /* =====================================================
+       MENU FERMÉ
+       ===================================================== */
+
+    .menu > li:not(.logo-li) {
+        display: none;
+    }
+
+
+    /* =====================================================
+       MENU OUVERT
+       ===================================================== */
+
+    .menu.active {
+        height: 100vh;
+
+        min-height: 100vh;
+
+        padding-top: 85px;
+        padding-left: 25px;
+
+        display: block;
+    }
+
+
+    /* =====================================================
+       ÉLÉMENTS PRINCIPAUX
+       ===================================================== */
+
+    .menu.active > li:not(.logo-li) {
+        display: block;
+
+        margin: 20px 0;
+
+        text-align: left;
+    }
+
+    .menu.active > li > a {
+        display: inline-block;
+
+        width: fit-content;
+
+        text-align: left;
+    }
+
+
+    /* =====================================================
+       SOUS-MENU MOBILE
+       ===================================================== */
+
+    .menu.active .dropdown {
+        position: relative;
+    }
+
+    .menu.active .dropdown .submenu {
+        position: absolute;
+
+        top: -10px;
+        left: 140px;
+
+        display: none;
+
+        min-width: 180px;
+
+        padding: 10px 0;
+
+        background-color: #027D43;
+
+        z-index: 5000;
+    }
+
+
+    /* Sous-menu ouvert */
+
+    .menu.active .dropdown.active .submenu {
+        display: block;
+    }
+
+
+    /* Éléments du sous-menu */
+
+    .menu.active .submenu li {
+        display: block;
+
+        margin: 0;
+
+        padding: 8px 10px;
+
+        text-align: left;
+    }
+
+    .menu.active .submenu li a {
+        display: inline-block;
+
+        position: relative;
+
+        width: auto;
+
+        white-space: nowrap;
+
+        z-index: 5001;
+    }
+
+
+    /* =====================================================
+       FLÈCHE MOBILE
+       ===================================================== */
+
+    .dropdown > a::after {
+        margin-left: 8px;
+    }
+
+
+    /* =====================================================
+       CARTES MOBILE
+       ===================================================== */
+
+    .ligne-trophee {
+        flex-direction: column;
+
+        text-align: center;
+
+        width: 90%;
+
+        padding: 20px 10px;
+
+        margin: 25px auto;
+
+        box-sizing: border-box;
+    }
+
+
+    /* IMPORTANT :
+       Même disposition pour les reverse */
+
+    .ligne-trophee.reverse {
+        flex-direction: column;
+    }
+
+
+    /* Image TOUJOURS au-dessus du texte */
+
+    .ligne-trophee img {
+        max-width: 100%;
+
+        height: auto;
+
+        object-fit: contain;
+
+        order: -1;
+    }
+
+
+    /* =====================================================
+       ICÔNES MOBILE
+       ===================================================== */
+
+    .icone-trophee {
+        width: 80%;
+
+        max-width: 300px;
+
+        margin-left: 0;
+    }
+
+
+    /* =====================================================
+       TEXTE MOBILE
+       ===================================================== */
+
+    .card-text {
+        width: 100%;
+
+        padding: 0;
+    }
+}

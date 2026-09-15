@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASSE - Site officiel</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+	<button class="hamburger" id="hamburger">
+		<span></span>
+        <span></span>
+        <span></span>
+	</button>
+	
+	<ul class="menu">
+		<li class="dropdown">
+			<a href="#">EFFECTIF</a>
+			<ul class="submenu">
+				<li><a href="Gardiens.html">GARDIENS</a></li>
+				<li><a href="Défenseurs.html">DEFENSEURS</a></li>
+				<li><a href="Milieux.html">MILIEUX</a></li>
+				<li><a href="Attaquants.html">ATTAQUANTS</a></li>
+				<li><a href="Staff.html">COACH / STAFF</a></li>
+			</ul>
+		</li>
+        <li><a href="Palmarès.html">PALMARES</a></li>
+		<li class="dropdown">
+			<a href="#">MAILLOTS</a>
+			<ul class="submenu">
+				<li><a href="maillots-2026.html">2026</a></li>
+				<li><a href="maillots historiques.html">ICONIQUES</a></li>
+				<li><a href="boutique.html">BOUTIQUE</a></li>
+			</ul>
+		</li>
+		<li class="logo-li">
+			<a href="index.html" id="logo-trigger">
+				<video id="logo-anim" autoplay muted playsinline>
+					<source src="video/logo.mp4" type="video/mp4">
+				</video>
+			</a>
+		</li>		
+		<li class="dropdown">
+			<a href="#">RÉSULTATS</a>
+			<ul class="submenu">
+				<li><a href="Matchs-à-venir.html">CALENDRIER</a></li>
+				<li><a href="Classement.html">CLASSEMENT</a></li>
+				<li><a href="Images.html">RETOUR EN IMAGES</a></li>
+				<li><a href="https://billetterie.asse.fr/">BILLETERIE</a></li>
+			</ul>
+		</li>
+        <li class="dropdown">
+			<a href="#">HERITAGE</a>
+			<ul class="submenu">
+				<li><a href="Histoire.html">HISTOIRE</a></li>
+				<li><a href="Légendes.html">LEGENDES</a></li>
+				<li><a href="Logos.html">LOGOS</a></li>
+			</ul>
+		</li>
+        <li><a href="Sponsors.html">SPONSORS</a></li>
+    </ul>
+</nav>
+
+<audio id="asse-sound" src="son/allez-les-verts-hymne-officiel-asse_WJTrc4OS.mp3"></audio>
+<canvas id="confetti-canvas"></canvas>
+
+<h1>AS SAINT-ÉTIENNE</h1>
+<button id="stop-music">STOP</button>
+
+<div class="ligne-trophee">
+	<div class="card-text">
+		<p>L’AS Saint-Étienne, fondée en 1933, est bien plus qu’un simple club de football : c’est une légende du sport français.
+		Avec son maillot vert iconique, son histoire riche en exploits et son stade mythique Geoffroy-Guichard, l’ASSE - Site officiel fait vibrer des générations de supporters.</p>
+	</div>
+	<img src="images/index/stade.jpg" alt="Stade Geoffroy-Guichard">
+</div>
+
+<div class="ligne-trophee reverse">
+    <div class="card-text">
+        <p>Le Peuple Vert est le cœur battant du club.
+		Les supporters, fidèles et passionnés, apportent une atmosphère unique dans le stade et incarnent l’identité populaire et combative de l’ASSE - Site officiel.</p>
+    </div>
+    <img src="images/index/peuple-vert.jpg" alt="Peuple Vert">
+</div>
+
+<div class="ligne-trophee">
+    <div class="card-text">
+        <p>Club le plus titré du championnat de France avec ses 10 titres nationaux, Saint-Étienne a marqué l’histoire grâce à des joueurs emblématiques et des épopées européennes inoubliables.</p>
+    </div>
+    <img src="images/index/equipe.jpg" alt="Équipe ASSE - Site officiel">
+</div>
+
+<div class="ligne-trophee reverse">
+    <div class="card-text">
+        <p>Le palmarès du club témoigne de sa grandeur.
+		La Coupe de la Ligue et les nombreux trophées nationaux sont la preuve de la constance et de l’excellence de l’ASSE - Site officiel à travers l’histoire.</p>
+    </div>
+    <img src="images/index/coupe-ligue.jpg" alt="Coupe de la Ligue">
+</div>
+
+<div class="ligne-trophee">
+    <div class="card-text">
+        <h2>Informations importantes</h2>
+        <p>Sur ce site, vous pouvez retrouver toutes les informations importantes sur le club.
+		Découvrez l’effectif complet et apprenez à connaître nos joueurs, revivez les grands moments du palmarès, explorez les maillots historiques et actuels, suivez les prochains matchs, plongez dans l’histoire du club et de ses légendes, et découvrez le stade Geoffroy-Guichard à travers des images et anecdotes.</p>
+    </div>
+    <img src="images/index/poteaux-carrés.jpg" alt="Poteaux Carrés">
+</div>
+
+<div id="popup">
+    <img id="popup-img" src="" alt="">
+</div>
+
+<script src="script.js"></script>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h3>Effectif</h3>
+      <ul>
+        <li><a href="Gardiens.html">GARDIENS</a></li>
+		<li><a href="Défenseurs.html">DEFENSEURS</a></li>
+		<li><a href="Milieux.html">MILIEUX</a></li>
+		<li><a href="Attaquants.html">ATTAQUANTS</a></li>
+		<li><a href="Staff.html">COACH / STAFF</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Maillots</h3>
+      <ul>
+        <li><a href="maillots-2026.html">2026</a></li>
+		<li><a href="maillots historiques.html">ICONIQUES</a></li>
+		<li><a href="boutique.html">BOUTIQUE</a></li>
+		<li><a href="Sponsors.html">SPONSORS</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Résultats</h3>
+      <ul>
+        <li><a href="Matchs-à-venir.html">CALENDRIER</a></li>
+		<li><a href="Classement.html">CLASSEMENT</a></li>
+		<li><a href="Images.html">RETOUR EN IMAGES</a></li>
+		<li><a href="https://billetterie.asse.fr/">BILLETERIE</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Héritage</h3>
+      <ul>
+        <li><a href="Histoire.html">HISTOIRE</a></li>
+		<li><a href="Palmarès.html">PALMARES</a></li>
+		<li><a href="Légendes.html">LEGENDES</a></li>
+		<li><a href="Logos.html">LOGOS</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 ASSE - Tous droits réservés | Mentions légales | Politique de confidentialité | Gestion des cookies
+  </div>
+</footer>
+
+</body>
+</html>

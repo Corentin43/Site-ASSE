@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produit - Sweat</title>
+
+<link rel="icon" href="images/favicon.png">
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="boutique-page">
+
+<!-- ===== MENU ===== -->
+<nav>
+	<button class="hamburger" id="hamburger">
+		<span></span>
+        <span></span>
+        <span></span>
+	</button>
+
+<ul class="menu">
+	<li class="dropdown">
+		<a href="#">EFFECTIF</a>
+		<ul class="submenu">
+			<li><a href="Gardiens.html">GARDIENS</a></li>
+			<li><a href="Défenseurs.html">DEFENSEURS</a></li>
+			<li><a href="Milieux.html">MILIEUX</a></li>
+			<li><a href="Attaquants.html">ATTAQUANTS</a></li>
+			<li><a href="Staff.html">COACH / STAFF</a></li>
+		</ul>
+	</li>
+
+    <li><a href="Palmarès.html">PALMARES</a></li>
+
+	<li class="dropdown">
+		<a href="#">MAILLOTS</a>
+		<ul class="submenu">
+			<li><a href="maillots-2026.html">2026</a></li>
+			<li><a href="maillots historiques.html">ICONIQUES</a></li>
+			<li><a href="boutique.html">BOUTIQUE</a></li>
+		</ul>
+	</li>
+
+	<li class="logo-li">
+		<a href="index.html">
+			<img src="images/2022.png" class="logo">
+		</a>
+	</li>		
+
+	<li class="dropdown">
+		<a href="#">RÉSULTATS</a>
+		<ul class="submenu">
+			<li><a href="Matchs-à-venir.html">CALENDRIER</a></li>
+			<li><a href="Classement.html">CLASSEMENT</a></li>
+			<li><a href="Images.html">RETOUR EN IMAGES</a></li>
+			<li><a href="https://billetterie.asse.fr/">BILLETERIE</a></li>
+		</ul>
+	</li>
+
+	<li class="dropdown">
+		<a href="#">HERITAGE</a>
+		<ul class="submenu">
+			<li><a href="Histoire.html">HISTOIRE</a></li>
+			<li><a href="Légendes.html">LEGENDES</a></li>
+			<li><a href="Logos.html">LOGOS</a></li>
+		</ul>
+	</li>
+
+    <li><a href="Sponsors.html">SPONSORS</a></li>
+</ul>
+</nav>
+
+<!-- MENU BOUTIQUE -->
+<section class="shop-nav">
+
+    <ul class="menu-boutique">
+
+        <li class="dropdown">
+            <a href="#">Tenues officielles</a>
+
+            <ul class="submenu">
+                <li><a href="domicile.html">Domicile</a></li>
+                <li><a href="exterieur.html">Extérieur</a></li>
+                <li><a href="gardien.html">Gardien</a></li>
+            </ul>
+        </li>
+
+        <li><a href="entrainement.html">Entraînement</a></li>
+		<li><a href="lifestyle.html">Lifestyle</a></li>
+		<li><a href="accessoires.html">Accessoires</a></li>
+		<li>
+			<a href="panier.html" class="panier-link">
+				🛒 Panier <span id="panier-count">0</span>
+			</a>
+		</li>
+
+    </ul>
+
+</section>
+<!-- ===== PRODUIT ===== -->
+<section class="fiche-produit">
+
+    <!-- GAUCHE : IMAGES -->
+    <div class="galerie">
+
+        <div class="maillot">
+			<img id="maillot-img" src="images/produits/sweat-v-f/sweat-vert-fonce.jpg" class="maillot-img">
+
+			<div id="flocage">
+				<span id="flocage-nom"></span>
+				<span id="flocage-numero"></span>
+			</div>
+		</div>
+
+        <div class="miniatures">
+			<img src="images/produits/sweat-v-f/sweat-vert-fonce.jpg" onclick="changerImage(this)">
+			<img src="images/produits/sweat-v-f/sweat-vert-fonce-2.jpg" onclick="changerImage(this)">
+			<img src="images/produits/sweat-v-f/sweat-vert-fonce-3.jpg" onclick="changerImage(this)">	
+            <img src="images/produits/sweat-v-f/sweat-vert-fonce-4.jpg" onclick="changerImage(this)">
+			<img src="images/produits/sweat-v-f/sweat-vert-fonce-5.jpg" onclick="changerImage(this)">
+        </div>
+
+    </div>
+
+    <!-- DROITE : INFOS -->
+    <div class="infos-produit">
+
+		<h1 id="product-name">Sweat entraînement demi-zip vert foncé 2026-2027</h1>
+
+        <h1><p class="prix">69,95 €</p></h1>
+
+        <p class="description">
+            Half-zip entrainement porté par le staff lors de la saison 2026-2027
+        </p>
+
+        <!-- TAILLES -->
+        <div class="tailles">
+            <p><strong>Choisir une taille :</strong></p>
+
+			<button onclick="selectSize(this)">S</button>
+            <button onclick="selectSize(this)">M</button>
+            <button onclick="selectSize(this)">L</button>
+            <button onclick="selectSize(this)">XL</button>
+			<button onclick="selectSize(this)">2XL</button>
+			<button onclick="selectSize(this)">3XL</button>
+        </div>
+
+        <!-- PERSONNALISATION -->
+        <div class="personnalisation">
+			<button class="btn-acheter"
+				onclick="ajouterPanier(this)"
+				data-nom="Sweat entraînement demi-zip vert foncé 2026-2027"
+				data-prix="69,95"
+				data-img="images/produits/sweat-v-f/sweat-vert-fonce.jpg">
+				Ajouter au panier
+			</button>
+		</div>
+
+    </div>
+
+</section>
+
+<script src="script.js" defer></script>
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h3>Effectif</h3>
+      <ul>
+        <li><a href="Gardiens.html">GARDIENS</a></li>
+		<li><a href="Défenseurs.html">DEFENSEURS</a></li>
+		<li><a href="Milieux.html">MILIEUX</a></li>
+		<li><a href="Attaquants.html">ATTAQUANTS</a></li>
+		<li><a href="Staff.html">COACH / STAFF</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Maillots</h3>
+      <ul>
+        <li><a href="maillots-2026.html">2026</a></li>
+		<li><a href="maillots historiques.html">ICONIQUES</a></li>
+		<li><a href="boutique.html">BOUTIQUE</a></li>
+		<li><a href="Sponsors.html">SPONSORS</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Résultats</h3>
+      <ul>
+        <li><a href="Matchs-à-venir.html">CALENDRIER</a></li>
+		<li><a href="Classement.html">CLASSEMENT</a></li>
+		<li><a href="Images.html">RETOUR EN IMAGES</a></li>
+		<li><a href="https://billetterie.asse.fr/">BILLETERIE</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Héritage</h3>
+      <ul>
+        <li><a href="Histoire.html">HISTOIRE</a></li>
+		<li><a href="Palmarès.html">PALMARES</a></li>
+		<li><a href="Légendes.html">LEGENDES</a></li>
+		<li><a href="Logos.html">LOGOS</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 ASSE - Tous droits réservés | Mentions légales | Politique de confidentialité | Gestion des cookies
+  </div>
+</footer>
+
+</body>
+</html>
